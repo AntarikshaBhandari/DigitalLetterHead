@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="np.com.arts.digitalletterhead.NibedanPeshGarne">
+
+    <include layout="@layout/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="निबेदनको बिषय" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="निबेदकको नाम" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="न.पा./गा.वि.स." />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="वडा नं." />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="टोल" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="मोबाइल नं." />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="इमेल" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_text_design"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="एटेचमेन्ट फाइल" />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#f2eded"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="निबेदन पेश गर्नुहोस" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
