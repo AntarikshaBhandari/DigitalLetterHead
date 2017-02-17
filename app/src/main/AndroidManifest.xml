@@ -17,13 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NibedanPeshGarne" />
-        <activity android:name=".BudgetNitiTathaKaryakram" />
         <activity android:name=".NagarikWadapatra" />
+        <activity android:name=".NagarikWadapatraContent" />
         <activity android:name=".KarDasturShulka" />
+        <activity android:name=".BudgetNitiTathaKaryakram" />
         <activity android:name=".Suchana" />
-        <activity android:name=".Sahayog" />
+        <activity android:name=".NibedanPeshGarne" />
         <activity android:name=".SujhabPeshGarne"></activity>
+        <activity android:name=".Sahayog" />
     </application>
 
 </manifest>
