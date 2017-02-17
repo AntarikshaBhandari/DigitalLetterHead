@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class BudgetNitiTathaKaryakram extends AppCompatActivity {
     Toolbar toolbar;
@@ -18,6 +19,7 @@ public class BudgetNitiTathaKaryakram extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("बजेट नीति तथा कार्यक्रम");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Toast.makeText(BudgetNitiTathaKaryakram.this, "ok", Toast.LENGTH_SHORT).show();
     }
 
     @Override
