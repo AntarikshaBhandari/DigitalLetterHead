@@ -21,8 +21,15 @@
             <TextView
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                style="@style/FormTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="एटेचमेन्ट फाइल" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="निबेदनको बिषय" />
@@ -35,8 +42,7 @@
             <TextView
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="निबेदकको नाम" />
@@ -49,8 +55,7 @@
             <TextView
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="न.पा./गा.वि.स." />
@@ -63,8 +68,7 @@
             <TextView
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="वडा नं." />
@@ -77,8 +81,7 @@
             <TextView
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="टोल" />
@@ -91,8 +94,7 @@
             <TextView
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="मोबाइल नं." />
@@ -105,8 +107,7 @@
             <TextView
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="इमेल" />
@@ -115,15 +116,6 @@
                 android:layout_width="match_parent"
                 android:background="@drawable/edit_text_design"
                 android:layout_height="wrap_content" />
-
-            <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="5dp"
-                android:textSize="15sp"
-                android:textColor="#000"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="एटेचमेन्ट फाइल" />
 
             <Button
                 android:layout_marginTop="20dp"

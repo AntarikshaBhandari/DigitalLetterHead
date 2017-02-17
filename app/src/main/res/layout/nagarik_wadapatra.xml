@@ -9,4 +9,13 @@
 
     <include layout="@layout/action_bar" />
 
+    <include layout="@layout/nagarik_wadapatra_single_item" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view_nagarik_wadapatra">
+
+    </android.support.v7.widget.RecyclerView>
+
 </LinearLayout>

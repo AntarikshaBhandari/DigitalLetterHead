@@ -1,6 +1,7 @@
 package np.com.arts.digitalletterhead;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         karDasturShulka = (CardView) findViewById(R.id.karDasturShulka);
         budgetNitiTathaKaryakram = (CardView) findViewById(R.id.budgetNitiTathaKaryakram);
         suchana = (CardView) findViewById(R.id.suchana);
-        nibedanPeshGarne= (CardView) findViewById(R.id.nibedanPeshGarne);
+        nibedanPeshGarne = (CardView) findViewById(R.id.nibedanPeshGarne);
         sujhabPeshGarne = (CardView) findViewById(R.id.sujhabPeshGarne);
         sahayog = (CardView) findViewById(R.id.sahayog);
 
@@ -35,49 +36,49 @@ public class MainActivity extends AppCompatActivity {
         nagarikWadapatra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),NagarikWadapatra.class));
+                startActivity(new Intent(getApplicationContext(), NagarikWadapatra.class));
             }
         });
 
         karDasturShulka.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),KarDasturShulka.class));
+                startActivity(new Intent(getApplicationContext(), KarDasturShulka.class));
             }
         });
 
         budgetNitiTathaKaryakram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),BudgetNitiTathaKaryakram.class));
+                startActivity(new Intent(getApplicationContext(), BudgetNitiTathaKaryakram.class));
             }
         });
 
         suchana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Suchana.class));
+                startActivity(new Intent(getApplicationContext(), Suchana.class));
             }
         });
 
         nibedanPeshGarne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),NibedanPeshGarne.class));
+                startActivity(new Intent(getApplicationContext(), NibedanPeshGarne.class));
             }
         });
 
         sujhabPeshGarne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),SujhabPeshGarne.class));
+                startActivity(new Intent(getApplicationContext(), SujhabPeshGarne.class));
             }
         });
 
         sahayog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Sahayog.class));
+                startActivity(new Intent(getApplicationContext(), Sahayog.class));
             }
         });
     }
@@ -90,9 +91,30 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==R.id.popupmenu_setting){
+        if (item.getItemId() == R.id.popupmenu_setting) {
             Toast.makeText(MainActivity.this, "Setting has been saved.", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "एप क्लोज गर्न फेरी ब्याक थिच्नुहोस्", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 }
