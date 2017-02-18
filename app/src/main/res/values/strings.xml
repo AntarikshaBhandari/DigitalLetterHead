@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DigitalLetterHead</string>
+    <string name="draweropen">draweropen</string>
+    <string name="drawerclose">drawerclose</string>
 
     <string name="DummyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

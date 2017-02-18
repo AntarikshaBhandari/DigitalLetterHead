@@ -3,241 +3,277 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="np.com.arts.digitalletterhead.MainActivity">
 
-    <include layout="@layout/action_bar" />
-
-    <ScrollView
+    <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollViewMainActivity">
+        android:id="@+id/drawerLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/nagarikWadapatra">
+            <include layout="@layout/action_bar" />
 
-                <RelativeLayout
+            <ScrollView
+                android:id="@+id/scrollViewMainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp">
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/citizenCharterLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/citizen_charter_logo" />
-
-                    <TextView
-                        style="@style/CardViewTextViewStyle"
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/nagarikWadapatra"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/citizenCharterLogo"
-                        android:text="नागरिक वडापत्र" />
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
 
-                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
 
-            </android.support.v7.widget.CardView>
+                            <ImageView
+                                android:id="@+id/citizenCharterLogo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/citizen_charter_logo" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/karDasturShulka">
+                            <TextView
+                                style="@style/CardViewTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/citizenCharterLogo"
+                                android:text="नागरिक वडापत्र" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp">
+                        </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/taxLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/tax_icon" />
+                    </android.support.v7.widget.CardView>
 
-                    <TextView
-                        style="@style/CardViewTextViewStyle"
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/karDasturShulka"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/taxLogo"
-                        android:text="कर दस्तुर शुल्क" />
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
 
-                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
 
-            </android.support.v7.widget.CardView>
+                            <ImageView
+                                android:id="@+id/taxLogo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/tax_icon" />
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/budgetNitiTathaKaryakram"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp">
+                            <TextView
+                                style="@style/CardViewTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/taxLogo"
+                                android:text="कर दस्तुर शुल्क" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp">
+                        </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/budgetLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/budget_icon" />
+                    </android.support.v7.widget.CardView>
 
-                    <TextView
-                        style="@style/CardViewTextViewStyle"
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/budgetNitiTathaKaryakram"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/budgetLogo"
-                        android:text="बजेट नीति तथा कार्यक्रम" />
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
 
-                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
 
-            </android.support.v7.widget.CardView>
+                            <ImageView
+                                android:id="@+id/budgetLogo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/budget_icon" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/suchana">
+                            <TextView
+                                style="@style/CardViewTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/budgetLogo"
+                                android:text="बजेट नीति तथा कार्यक्रम" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp">
+                        </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/infoLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/info_icon" />
+                    </android.support.v7.widget.CardView>
 
-                    <TextView
-                        style="@style/CardViewTextViewStyle"
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/suchana"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/infoLogo"
-                        android:text="सूचना" />
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
 
-                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
 
-            </android.support.v7.widget.CardView>
+                            <ImageView
+                                android:id="@+id/infoLogo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/info_icon" />
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/nibedanPeshGarne"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp">
+                            <TextView
+                                style="@style/CardViewTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/infoLogo"
+                                android:text="सूचना" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp">
+                        </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/applicationLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/application_icon" />
+                    </android.support.v7.widget.CardView>
 
-                    <TextView
-                        style="@style/CardViewTextViewStyle"
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/nibedanPeshGarne"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/applicationLogo"
-                        android:text="निवेदन पेश गर्ने" />
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
 
-                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
 
-            </android.support.v7.widget.CardView>
+                            <ImageView
+                                android:id="@+id/applicationLogo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/application_icon" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/sujhabPeshGarne">
+                            <TextView
+                                style="@style/CardViewTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/applicationLogo"
+                                android:text="निवेदन पेश गर्ने" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp">
+                        </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/feedbackLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/feedback_icon" />
+                    </android.support.v7.widget.CardView>
 
-                    <TextView
-                        style="@style/CardViewTextViewStyle"
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/sujhabPeshGarne"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/feedbackLogo"
-                        android:text="सुझाव पेश गर्ने" />
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
 
-                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
 
-            </android.support.v7.widget.CardView>
+                            <ImageView
+                                android:id="@+id/feedbackLogo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/feedback_icon" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/sahayog">
+                            <TextView
+                                style="@style/CardViewTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/feedbackLogo"
+                                android:text="सुझाव पेश गर्ने" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp">
+                        </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/helpLogo"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/help_icon" />
+                    </android.support.v7.widget.CardView>
 
-                    <TextView
-                        style="@style/CardViewTextViewStyle"
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/sahayog"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/helpLogo"
-                        android:text="सहयोग" />
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
 
-                </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
 
-            </android.support.v7.widget.CardView>
+                            <ImageView
+                                android:id="@+id/helpLogo"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/help_icon" />
+
+                            <TextView
+                                style="@style/CardViewTextViewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/helpLogo"
+                                android:text="सहयोग" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
 
         </LinearLayout>
-    </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/navigation_header" />
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/header"
+                app:menu="@menu/drawermenu">
+
+            </android.support.design.widget.NavigationView>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
 
 
 </LinearLayout>

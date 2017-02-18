@@ -19,54 +19,64 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/FormTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="* चिन्ह भएका सबै भर्न अनिबार्य छ" />
+
+            <TextView
+                style="@style/FormTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                style="@style/FormTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="नाम" />
+                android:text="नाम *" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:background="@drawable/edit_text_design"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_design" />
 
             <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="5dp"
                 style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="मोबाइल नं." />
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:text="मोबाइल नं. *" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:background="@drawable/edit_text_design"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:background="@drawable/edit_text_design"
+                android:inputType="number" />
 
             <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="5dp"
                 style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="सुझाब" />
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:text="सुझाब *" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:background="@drawable/edit_text_design"
                 android:layout_height="wrap_content"
-                android:minHeight="100dp"/>
+                android:background="@drawable/edit_text_design"
+                android:minHeight="100dp" />
 
             <Button
-                android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary"
-                android:textColor="#f2eded"
-                android:layout_marginBottom="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="सुझाब पेश गर्नुहोस" />
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="सुझाब पठाउनुहोस्"
+                android:textColor="#f2eded"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

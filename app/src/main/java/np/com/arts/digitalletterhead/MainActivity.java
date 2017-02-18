@@ -2,6 +2,10 @@ package np.com.arts.digitalletterhead;
 
 import android.content.Intent;
 import android.os.Handler;
+import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -14,6 +18,10 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     CardView nagarikWadapatra, karDasturShulka, budgetNitiTathaKaryakram, suchana, nibedanPeshGarne, sujhabPeshGarne, sahayog;
     Toolbar toolbar;
+
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    ActionBarDrawerToggle actionBarDrawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +40,39 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Digital Letter Head");
+
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        navigationView = (NavigationView) findViewById(R.id.navigation_view);
+
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.draweropen, R.string.drawerclose);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.home_menu:
+                        getSupportActionBar().setTitle(R.string.app_name);
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.introduction_menu:
+                        getSupportActionBar().setTitle("नगर परिचय");
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+
+                    case R.id.contact_menu:
+                        getSupportActionBar().setTitle("सम्पर्क ठेगाना");
+                        item.setChecked(true);
+                        drawerLayout.closeDrawers();
+                        break;
+                }
+                return true;
+            }
+        });
 
         nagarikWadapatra.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +122,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Sahayog.class));
             }
         });
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        actionBarDrawerToggle.syncState();
     }
 
     @Override

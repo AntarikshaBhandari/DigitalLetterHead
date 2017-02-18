@@ -22,9 +22,41 @@
                 style="@style/FormTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:text="एटेचमेन्ट फाइल" />
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="* चिन्ह भएका सबै भर्न अनिबार्य छ" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:text="निबेदन संलग्न गर्ने *"
+                    android:textColor="#f2eded"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:text="प्रमाण कागज संलग्न गर्ने *"
+                    android:textColor="#f2eded"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5sp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
 
             <TextView
                 style="@style/FormTextView"
@@ -32,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
-                android:text="निबेदनको बिषय" />
+                android:text="निबेदनको बिषय *" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -45,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
-                android:text="निबेदकको नाम" />
+                android:text="निबेदकको नाम *" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -58,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
-                android:text="न.पा./गा.वि.स." />
+                android:text="न.पा./गा.वि.स. *" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -71,13 +103,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
-                android:text="वडा नं." />
+                android:text="वडा नं. *" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_text_design"
-                android:inputType="number"/>
+                android:inputType="number" />
 
             <TextView
                 style="@style/FormTextView"
@@ -85,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
-                android:text="टोल" />
+                android:text="टोल *" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -98,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
-                android:text="मोबाइल नं." />
+                android:text="मोबाइल नं. *" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -125,8 +157,10 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginTop="20dp"
                 android:background="@color/colorPrimary"
-                android:text="निबेदन पेश गर्नुहोस"
-                android:textColor="#f2eded" />
+                android:text="निबेदन पठाउनुहोस्"
+                android:textColor="#f2eded"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
